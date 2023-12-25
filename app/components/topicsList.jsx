@@ -35,7 +35,7 @@ const TopicsList = async() => {
             </div>
             <div className='flex gap-6'>
                 <div>
-                    <Removebtn></Removebtn>
+                    <Removebtn id={t._id}></Removebtn>
                 </div>
                 <div>
                     <Link href={`/editTopic/${t._id}`} >

@@ -20,7 +20,7 @@ const Addtopic = () => {
       alert("title and description are required")
       return
     }
-    if(titlevalue || descreptionvalue ==="Prachi"||"prachi"){
+    if(titlevalue ==="Prachi"){
       const audio = new Audio('music.mp3');
       audio.play()
       alert("love from Roshan")
@@ -41,6 +41,7 @@ const Addtopic = () => {
       })
       if (res.ok) {
         router.push('/')
+        router.refresh()
       } else {
         throw new Error("failed to create a topic")
       }
